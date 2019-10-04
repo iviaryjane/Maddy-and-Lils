@@ -1,6 +1,9 @@
 :root {
-  --primary-color: rgba(13, 110, 139, 0.75);
-  --overlay-color: rgba(24, 39, 51, 0.85);
+  --primary-color: rgba(255,213,83, 0.30);
+  /* --primary-color: rgba(13, 110, 139, 0.75); */
+  --overlay-color:   rgba(124,163,63, 0.85);
+  /* --overlay-color:   rgba(255,213,83, 0.85); */
+  /* --overlay-color: rgba(24, 39, 51, 0.85); */
   --menu-speed: 0.75s;
 }
 
@@ -11,7 +14,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', cursive;
   line-height: 1.4;
 }
 
@@ -30,7 +33,7 @@ body {
 }
 .showcase:before {
   content:'';
-  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  background: url('../img/showcase1.jpg') no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -49,7 +52,11 @@ body {
 }
 
 .showcase h1 {
-  font-size: 4rem;
+  font-size: 2rem;
+  font-family: 'Vast Shadow', cursive;
+  color: #AD3318;
+  /* color: #fff; */
+  text-shadow: 2px 2px #fff;
 }
 
 .showcase {
