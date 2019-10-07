@@ -1,7 +1,7 @@
 :root {
-  --primary-color: rgba(255,213,83, 0.30);
-  /* --primary-color: rgba(13, 110, 139, 0.75); */
-  --overlay-color:   rgba(124,163,63, 0.85);
+  /* --primary-color: rgba(164,214,206, 0.30); */
+  --primary-color: rgba(98,191,180,0.55);
+  --overlay-color:   rgba(10,102,92,0.95);
   /* --overlay-color:   rgba(255,213,83, 0.85); */
   /* --overlay-color: rgba(24, 39, 51, 0.85); */
   --menu-speed: 0.75s;
@@ -13,9 +13,12 @@
   padding: 0;
 }
 
+
 body {
-  font-family: 'Roboto', cursive;
-  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
 }
 
 .container {
@@ -31,6 +34,7 @@ body {
   height: 100vh;
   position: relative;
 }
+
 .showcase:before {
   content:'';
   background: url('../img/showcase1.jpg') no-repeat center center/cover;
@@ -51,12 +55,56 @@ body {
   height: 100%;
 }
 
+.showcase .showcase-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFD453;
+}
+
+.showcase .showcase-ordercol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  height: 50%;
+}
+
+.showcase .showcase-orderrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  height: 50%;
+}
+
+.showcase h2 {
+  font-size: 2rem;
+  font-family: 'Open ', cursive;
+  color: #0B564C;
+  /* text-shadow: 2px 2px #FF9B7D; */
+}
+
+img {
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
 .showcase h1 {
   font-size: 2rem;
-  font-family: 'Vast Shadow', cursive;
-  color: #AD3318;
-  /* color: #fff; */
-  text-shadow: 2px 2px #fff;
+  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  color: #0B564C;
+  /* text-shadow: 2px 2px #FF9B7D; */
 }
 
 .showcase {
@@ -75,5 +123,18 @@ body {
 }
 
 .btn:hover {
-  opacity: 0.7;
+  opacity: 1.0;
+}
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-facebook:hover {
+  color: #d5d5d5;
 }
