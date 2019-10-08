@@ -17,7 +17,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
-  background: #eee;
+  background: #fff;
   height: auto;
 }
 
@@ -37,6 +37,17 @@ body {
 
 .showcase:before {
   content:'';
+  background: url('../img/tamales.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.showcase-tacos {
+  content:'';
   background: url('../img/showcase1.jpg') no-repeat center center/cover;
   position: absolute;
   top: 0;
@@ -46,6 +57,17 @@ body {
   z-index: -1;
 }
 
+.showcase .showcase-tacos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  position: sticky;
+  z-index: 2;
+}
+
 .showcase .showcase-inner {
   display: flex;
   flex-direction: column;
@@ -53,6 +75,8 @@ body {
   justify-content: center;
   text-align: center;
   height: 100%;
+  position: sticky;
+  z-index: 2;
 }
 
 .showcase .showcase-menu {
@@ -74,21 +98,62 @@ body {
   height: 50%;
 }
 
-.showcase .showcase-orderrow {
+.showcase .showcase-main_connect {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: #fff;
-  height: 50%;
+  height: 60%;
+  position: sticky;
+  z-index: 2;
+  /* background-color: var(--primary-color); */
+
 }
+
+.showcase .showcase-connect {
+  /* background-color: #fff; */
+  height: 50%;
+  margin: auto;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: var(--primary-color); */
+}
+
+.showcase .showcase-media_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background-color: var(--primary-color); */
+  height: 100%;
+}
+
+.showcase .showcase-media_icons_divided {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background-color: var(--primary-color); */
+  height: 100%;
+}
+
 
 .showcase h2 {
   font-size: 2rem;
-  font-family: 'Open ', cursive;
-  color: #0B564C;
+  font-family: 'Open Sans', sans-serif;
+  color: #74BFB6;
   /* text-shadow: 2px 2px #FF9B7D; */
+}
+
+.showcase h3 {
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px #0B564C;
 }
 
 img {
@@ -100,10 +165,10 @@ img {
 }
 
 .showcase h1 {
-  font-size: 2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+  font-family: 'Lobster Two', cursive;
   align-items: center;
-  color: #0B564C;
+  color: #fff;
   /* text-shadow: 2px 2px #FF9B7D; */
 }
 
@@ -126,15 +191,32 @@ img {
   opacity: 1.0;
 }
 
-.social a {
-  font-size: 4.5em;
-  padding: 3rem;
-}
-
 .fa-facebook {
-  color: #3b5998;
+  font-size: 2.5em;
+  padding: 10rem;
+  color: #74BFB6;
 }
 
 .fa-facebook:hover {
-  color: #d5d5d5;
+  color: #0B564C;
+}
+
+.fa-instagram {
+  font-size: 2.5em;
+  padding: 10rem;
+  color: #74BFB6;
+}
+
+.fa-instagram:hover {
+  color: #0B564C;
+}
+
+.fa-envelope-square {
+  font-size: 2.5em;
+  padding: 10rem;
+  color: #74BFB6;
+}
+
+.fa-envelope-square:hover {
+  color: #0B564C;
 }
